@@ -1,1 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#main {
+  background: url(../assets/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  width: 100%;
+}
+.brand i{
+  display: none;
+}
+#main nav ul {
+  display: flex;
+  list-style: none;
+}
+
+#main nav ul li {
+  margin: 0 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 0 10px;
+}
+
+#main nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+@media  screen and (max-width:550px){
+.brand i{
+  display: block;
+}
+.brand{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+}
+#main nav ul{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+#main nav{
+  flex-direction: column;
+}
+}
+  #main nav ul li a:hover {
+  border: 1px solid white;
+  transition: border 0.5s;
+}
+
+#main .content {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: calc(100vh - 72px);
+  padding: 0 10%;
+  max-height: 600px;
+}
+
+#main .content div {
+  width: 400px;
+}
+
+#main .content button {
+  padding: 10px 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+}
+#main .content button:hover{
+  color: white;
+  background-color: rgb(0, 109, 69);
+}
+
+#main .content h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+}
+
+#main .content p {
+  font-size: 15px;
+  opacity: 80%;
+  padding-bottom: 20px;
+}
+
+#products {
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+#products .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#products .title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+#products .title p {
+  padding: 0 30%;
+  font-size: 14px;
+  opacity: 60%;
+  margin-bottom: 10px;
+}
+
+#products .items {
+  display: flex;
+  justify-content: center;
+}
+
+#products .items .card {
+  margin: 1%;
+  border-radius: 3px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.412);
+}
+#products .items .card img {
+  height: 250px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+}
+
+#products .items .card .cake-description {
+  padding: 0px 13px;
+}
+
+#products .items .card h3 {
+  margin-left: 10px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#products .items .card h5 {
+  margin-left: 15px;
+  font-size: 16px;
+  color: rgb(0, 109, 69);
+}
+#products .items .card p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: black;
+  opacity: 60%;
+  padding: 10px 0;
+}
+#products .items .card .add-button {
+  padding: 10px;
+}
+#products .items .card .add-button button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(0, 109, 69);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#products .items .card .add-button button:hover {
+  background-color: rgb(1, 88, 56);
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(238, 255, 249);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 109, 69);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 88, 56);
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(0, 109, 69);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li{
+  color: #ffffff;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive footer*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* responsive main contents */
+
+@media screen and (max-width: 1100px) {
+  #products .items {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  #products .items .card {
+    margin: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #products .items {
+    display: grid;
+    grid-template-columns: 380px;
+  }
+}
+
+/* review */
+
+.review{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.review .heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+  
+  .review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 3fr));
+    gap: 1.5rem;
+    padding:2%;
+    margin: 0 100px;
+    max-width: auto;
+  }
+  
+  .review .box-container .box{
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--white);
+  }
+  
+  .review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review .box-container .box h3{
+    padding: 1rem 0;
+    color: rgb(0, 109, 69);
+    
+  }
+  
+  .review .box-container .box .stars i{
+    color:rgb(0, 109, 69) ;
+    
+  }
+  
+  .review .box-container .box p{
+    color: #444;
+    padding-top: 1rem;
+  }
+  @media  screen and (max-width:850px) {
+    .review .box-container .box p{
+      display: none;
+    }
+  }
+  @media  screen and (max-width:820px) {
+    .review .box-container {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin:20px;
+      padding: 1% 20%;
+    }
+ 
+  }
+  
+  /* review end */
+
+  /* order */
+
+  .order{
+    margin: 0 70px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .order h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-top:2px solid rgb(0, 109, 69) ;
+    padding: 10px 0 0 0;
+
+  }
+.order .row{
+    display: grid;
+    grid-template-columns:40% 60%;
+    margin-left: 20px;
+  }
+  
+  .order .row .image{
+    margin-bottom:150px;
+  }
+  
+  .order .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .order .row form{
+    flex: 1 1 50rem;
+    padding: 5rem;
+  }
+  .order .row .btn{
+    background-color:rgb(0, 109, 69) ;
+    color: white;
+  }
+  
+  .order .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .order .row form .inputBox input,
+  .order .row form textarea{
+    padding: 1rem;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    width: 49%;
+  }
+  
+  .order .row form .inputBox input:focus,
+  .order .row form textarea:focus{
+    border: .1rem solid ;
+  }
+  
+  .order .row form textarea{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+  }
+  .order .row form .btn{
+    padding: 10px;
+    border-radius: 3px;
+  }
+  @media  screen and (max-width:1000px) {
+      .order .row .image img{
+      display: none;
+    }
+    .order .row form{
+      width: 100%;
+      padding: 5%;
+    }
+    .order .row{
+      display: grid;
+      grid-template-columns:0% 100%;
+      margin-left: 5%;
+    }
+  }
+  /* order */
+  
